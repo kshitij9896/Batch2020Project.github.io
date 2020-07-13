@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background:#222;*/
+    background: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+
+
+}
+
+.clock {
+    width: auto;
+    height: auto;
+
+    position: relative;
+
+}
+
+.demo {
+    text-transform: uppercase;
+    justify-content: center;
+    color: white;
+
+}
+
+.flip-clock-dot {
+    background: #ccc;
+}
+
+.flip-clock-meridium a {
+    color: #ccc;
+}
+
+.flip-clock-divider .flip-clock-label {
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    /*text-align: center;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    justify-content: space-around;
+
+}

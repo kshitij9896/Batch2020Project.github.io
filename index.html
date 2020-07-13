@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BATCH-2020 Project | Coming Soon Page </title>
+    <link rel="stylesheet" href="flipclock.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="flipclock.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body onload="myfunction()">
+    <div class="clock"></div>
+    <script type="text/javascript">
+    var date = new Date("Sept 25,2020 12:00:00");
+    var now = new Date();
+    var diff = (date.getTime() / 1000) - (now.getTime() / 1000);
+    var clock = $('.clock').FlipClock(diff, {
+        // clockFace:'TwelveHourClock',
+        clockFace: 'DailyCounter',
+        countdown: true
+    });
+    </script>
+</body>
+
+</html>
+<script>
+function myfunction() {
+    swal({
+        title: "Thanks For Visit",
+        text: "Hold On,We Are Almost There,",
+        icon: "success",
+        // button: "Awww",
+
+    });
+}
+</script>
